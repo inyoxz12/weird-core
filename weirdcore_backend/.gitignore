@@ -1,0 +1,48 @@
+# --- Python / compilados ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# --- Entornos virtuales ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Configuración / secretos ---
+.env
+*.env
+.env.*
+
+# --- Base de datos local ---
+db.sqlite3
+
+# --- Archivos de Django generados ---
+staticfiles/
+media/
+
+# Si usas collectstatic a otra carpeta, ignórala también:
+# static/
+
+# --- Caches de tests / herramientas ---
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.cache/
+
+# --- Editores / IDE ---
+.vscode/
+.idea/
+*.iml
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
