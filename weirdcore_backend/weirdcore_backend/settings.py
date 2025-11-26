@@ -66,8 +66,12 @@ WSGI_APPLICATION = 'weirdcore_backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / os.getenv('DJANGO_DB_NAME', 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('DJANGO_DB_NAME', 'weirdcore'),
+        'USER': os.getenv('DJANGO_DB_USER', 'weirdcore_user'),
+        'PASSWORD': os.getenv('DJANGO_DB_PASSWORD', 'changeme'),
+        'HOST': os.getenv('DJANGO_DB_HOST', 'localhost'),
+        'PORT': os.getenv('DJANGO_DB_PORT', '5432'),
     }
 }
 
